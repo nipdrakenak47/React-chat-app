@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    display: flex;
+    background-color: rgb(173, 201, 225);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.window{
+    height: 75%;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    background-color: rgb(46, 73, 140);
+}
+
+.chat{
+    flex: 2;
+}
+
+.chat-empty{
+    flex: 2;
+}
+
+.nav{
+    display: flex;
+    background-color: rgb(3, 33, 81);
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo{
+    font-weight: bold;
+    color: white;
+}
+
+.user-self{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-self span{
+    color: white;
+}
+
+.user-self img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-self button{
+    background-color: rgb(78, 102, 164);
+    color: white;
+    font-size: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.search{
+    background-color: rgb(46, 73, 140);
+    border-bottom: 1.5px solid rgb(181, 192, 211);
+}
+
+.input{
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(46, 73, 140);
+}
+.input input{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: rgb(254, 254, 254);
+}
+
+.input input::placeholder{
+    color: rgb(228, 222, 222);
+}
+
+
+
+.user{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(46, 73, 140);
+}
+
+.user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user span{
+    color: white;
+}
+
+.user:hover{
+    cursor: pointer;
+    background-color: rgb(3, 42, 105);
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.user-info p{
+    font-size: 12px;
+    margin: 0;
+    color: rgb(184, 164, 164);
+}
+
+.sidebarchat{
+    background-color: rgb(46, 73, 140);
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-empty p{
+    font-size: 32px;
+    color: gray;
+}
+
+.upper{
+    display: flex;
+    background-color: rgb(46, 73, 140);
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    height: 25px;
+}
+
+.upper span{
+    color: white;
+    font-weight: bold;
+}
+
+.message-window{
+    box-sizing: border-box;
+    background-color: rgb(195, 204, 218);
+    padding: 10px;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.message-input{
+    height: 25px;
+    padding: 15px;
+    background-color: rgb(240, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message-input input{
+    border: none;
+    outline:none;
+    background-color: inherit;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
+    width: 400px;
+}
+
+.send{
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    gap: 2px;
+}
+
+.send img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
+.btn-send{
+    padding:5px;
+    cursor: pointer;
+    background-color: rgb(78, 102, 164);
+    border: none;
+    color: white;
+    width: 50px;
+    height: 30px;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-owner{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+
+.message-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.message-info img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message-info span{
+    font-size: 12px;
+    color: gray;
+}
+
+.message-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.message-content img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.message-content span{
+    padding: 9px 15px;
+    margin: 10px;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.message-owner{
+    .message-content span{
+        border-radius: 10px 0px 10px 10px;
+        background-color: rgb(131, 168, 213);
+}
+}

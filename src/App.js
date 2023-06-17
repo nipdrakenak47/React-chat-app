@@ -2,17 +2,16 @@ import Login from "./Pages/Login.js";
 import Register from "./Pages/Register.js";
 import Home from "./Pages/Home.js";
 import "./Pages/Login.css";
-import { BrowserRouter as Router, Routes, Route, Link,Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext.js";
 import { useContext } from "react";
 
 
 function App() {
   const currentUser = useContext(AuthContext);
-  const x=null;
 
   const ProtectedRoute = (props)=>{
-    if(currentUser.currentUser===null){
+    if(currentUser.currentUser===null || Object.keys(currentUser.currentUser).length==0){
       return <Navigate to='login'></Navigate>;
     }
     else{

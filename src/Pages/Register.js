@@ -76,7 +76,7 @@ export default function Register() {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <h1>Kalal Chat</h1>
+        <h1>EasyChat</h1>
         <p>Register</p>
         <form onSubmit={submitHandler} className="registerForm">
           <input type="text" placeholder="Your Name" />

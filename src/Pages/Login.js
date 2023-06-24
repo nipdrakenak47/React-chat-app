@@ -26,7 +26,7 @@ export default function Login() {
   return (
     <div className="formContainer-login">
       <div className="formWrapper-login">
-        <h1>Kalal Chat</h1>
+        <h1>EasyChat</h1>
         <p>Login</p>
         <form action="" className="LoginForm-login" onSubmit={submitHandler}>
           <input type="email" name="" id="" placeholder="Email" />

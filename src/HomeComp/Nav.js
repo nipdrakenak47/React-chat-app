@@ -11,7 +11,7 @@ export default function Nav() {
 
   return (
     <div className='nav'>
-      <span className='logo'>Kalal Chat</span>
+      <span className='logo'>EasyChat</span>
       <div className='user-self'>
         <img src={currentUser.photoURL} alt="" />
         <span>{currentUser.displayName}</span>
